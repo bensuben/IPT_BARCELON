@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #272f23;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+header .logo img {
+    height: 50px;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    color: #ffab40;
+}
+
+header nav ul li a.active {
+    color: #ff5f56; /* Highlight color for the active state */
+}
+
+/* Wrapper for centering the container */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px); /* Subtract header height */
+    margin-top: 80px; /* Prevent overlap with the fixed header */
+}
+
+.container {
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-me h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: #272f23; /* Match nav color */
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-button:hover {
+    background-color: #1c2119; /* Darker shade for hover */
+}
+
+.contact-button:active {
+    background-color: #141813; /* Even darker shade for active state */
+    transform: scale(0.98); /* Adds a subtle press effect */
+}
